@@ -5,7 +5,8 @@ percona-mysql-cluster
 ```
 sudo apt-get update -y  && sudo apt-get upgrade -y
 && sudo apt-get dist-upgrade -y && sudo apt-get install wget -y
-&& wget https://repo.percona.com/apt/percona-release_latest.$(lsb_release -sc)_all.deb && sudo dpkg -i percona-release_latest.$(lsb_release -sc)_all.deb
+&& wget https://repo.percona.com/apt/percona-release_latest.$(lsb_release -sc)_all.deb
+&& sudo dpkg -i percona-release_latest.$(lsb_release -sc)_all.deb
 && sudo percona-release setup pxc57 && sudo apt-get update -y && sudo apt install percona-xtradb-cluster-full-57 -y
 ```
 # 2. Host Config(Server1-Server2)
