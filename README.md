@@ -101,4 +101,11 @@ Start
  sudo systemctl start mysql
 ```
 
+# 5. Proxy SQL Kurulumu
+
+wget -nv -O /etc/apt/trusted.gpg.d/proxysql-2.6.x-keyring.gpg 'https://repo.proxysql.com/ProxySQL/proxysql-2.6.x/repo_pub_key.gpg'
+sudo echo deb https://repo.proxysql.com/ProxySQL/proxysql-2.6.x/$(lsb_release -sc)/ ./ | sudo tee /etc/apt/sources.list.d/proxysql.list
+sudo systemctl start proxysql
+sudo ufw allow 6033/tcp
+
 
