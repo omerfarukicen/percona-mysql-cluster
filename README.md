@@ -18,11 +18,7 @@ sudo apt-get update -y  && sudo apt-get upgrade -y
 ```
 # 3. Firewall Disable
 ```
-sudo ufw allow 3306/tcp
-sudo ufw allow 4444/tcp
-sudo ufw allow 4567/tcp
-sudo ufw allow 4568/tcp
-sudo ufw allow 2222/tcp
+sudo ufw allow 3306/tcp && sudo ufw allow 4444/tcp && sudo ufw allow 4567/tcp && sudo ufw allow 4568/tcp && sudo ufw allow 2222/tcp && sudo ufw allow 22/tcp
 ```
 Firewall restart
 ```
